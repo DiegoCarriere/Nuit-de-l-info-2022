@@ -1,0 +1,377 @@
+/* CSS */
+
+/* Haut de la page (Menu de sélection "Général") */
+.menu_general {
+    width: 750px;
+    background-color: #1960e3;
+    height: 50px;
+    border-radius: 5em;
+    box-shadow: 5px 5px #103478;
+    margin: 5px;
+    padding-top: 25px;
+    position: sticky;
+    padding-right: 50px;
+}
+
+nav{
+    position: fixed;
+}
+nav .menu_general {
+    display: flex;
+}
+
+/*Sous menus du menu_général*/
+nav .sous_menu{
+    width: 180%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    visibility: hidden;
+    left: 25px;
+    top:17px;
+}
+.puce {
+    color: white;
+    visibility: hidden;
+}
+
+.sous_menu a:hover .puce {
+    visibility: visible;
+}
+
+
+.sous_menu > div > a{
+    background-color: #1960e3;
+    border-radius: 5em;
+    box-shadow: 5px 5px #103478;
+    color: white;
+    text-decoration: none;
+    padding: 4px 10px 4px 10px;
+}
+.sous_menu > div {
+    margin-top: 14px;
+}
+
+nav>div>div:hover .sous_menu{
+    visibility: visible;
+}
+
+.burger:hover .menu_burger {
+    display: block;
+}
+
+/*Menu Burger*/
+.menu_burger > div > a{
+    background-color: #1960e3;
+    width: 100px;
+    border-radius: 5em;
+    padding: 5px;
+    margin-top: 8px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    box-shadow: 5px 5px #103478;
+
+}
+
+.menu_burger{
+    display: none;
+    position: absolute;
+    z-index: 4;
+}
+
+.menu_general > div > a{ /* Mots dans le Menu */
+    font-family: "Trebuchet MS", serif;
+    display: inline;
+    font-size: 25px;
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+/*Affichage Responsive*/
+@media(min-width: 800px){
+    .burger{
+        display:none;
+    }
+    article{
+        width: 50%;
+    }
+    nav>div>div:hover{
+        text-shadow: 6px 5px 3px #101d58;
+    }
+}
+
+@media(max-width: 800px){
+    .burger > img{
+        width: 50px;
+        z-index: 4;
+        background-color: #1960e3;
+        border-radius: 5em;
+        box-shadow: 5px 5px #103478;
+        margin: 5px;
+        padding: 10px;
+        position: sticky;
+        top: 10px;
+    }
+    nav .menu_general{
+        display: none;
+    }
+    .burger{
+        width: 84px;
+    }
+    article{
+        width: 85%;
+    }
+}
+
+/*Affiche avec une ombre le titre de la page actuelle*/
+.active{
+    text-shadow: 6px 5px 3px #101d58;
+}
+
+/*_____________________*/
+
+/* BODY */
+
+body { /* Toute la page sauf head et footer */
+    /*background-color: #d0d3d6;*/
+    background-image: url("../images/pattern.jpg");
+    background-position: top center;
+    background-repeat: repeat repeat;
+    background-size: auto;
+    font-family: "Verdana", serif;
+    margin: auto;
+    height:100%;
+}
+
+h1 { /* Titre */
+    background: radial-gradient(#353535 400px ,transparent 100%) ;
+    /*opacity: 1;*/
+    font-size: 50px;
+    color: white;
+    padding: 40px 0;
+    margin: 5% auto auto auto;
+    width: 100%;
+    text-align: center;
+    line-height: 120%;
+}
+
+h2 { /* Sous Titre */
+    background: radial-gradient(#353535 400px, transparent 100%);
+    /*opacity: 0.9;*/
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    padding: 40px 0;
+    margin: auto auto 2% auto;
+    width: 100%;
+    text-align: center;
+    line-height: 120%;
+}
+
+h3 { /* Titres de Paragraphes */
+    font-size: 25px;
+    color: black;
+    padding-left: 25px;
+    margin: 2% auto 1% auto;
+    width: 100%;
+}
+/*Paramètres de la page*/
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/*Affichage principal*/
+article{
+    margin-top: 30px;
+}
+
+/*Paragraphes*/
+section {
+    background-color: #d0d3d6;
+    border: 2px solid grey;
+    border-radius: 1em;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 1%;
+
+}
+
+/* Texte des paragraphes */
+p {
+    font-family: "Trebuchet MS", serif;
+    font-size: 17px;
+    text-indent: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+
+}
+
+/* ACCUEIL */
+
+.illu_accueil{
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 3em;
+    display:flex;
+}
+
+
+/* CHRONOLOGIE */
+
+.vieux{
+    width: 80%;
+    margin-top: 100%;
+    margin-bottom: 40%;
+}
+
+aside{
+    margin-left: 2%;
+    flex: 33.33%;
+}
+
+@media(max-width: 900px){
+    aside{
+        display: none;
+    }
+}
+
+@media(min-width: 900px){
+    .frise{
+        display: flex;
+        flex: 33.33%;
+    }
+}
+
+.chrono{
+    display: flex;
+    flex: 33.33%;
+    margin-top: 0;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.europe{
+    width: 90%;
+    margin-bottom: 40%;
+}
+
+.frise_img{
+    margin-top: 70%;
+    width: 80%;
+    height: 80%;
+}
+
+/* ARGUMENTS */
+
+.wow {
+    width: 40%;
+    margin: auto;
+    display: flex;
+
+}
+
+.soc{
+    width: 25%;
+    margin: auto;
+    display: flex;
+}
+
+
+/* FOOTER */
+/* css des boutons de liens*/
+.twitter {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.facebook {
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+}
+.youtube {
+    position: fixed;
+    bottom: 75px;
+    right: 5px;
+}
+.instagram {
+    position: fixed;
+    bottom: 110px;
+    right: 5px;
+}
+
+footer{
+    background-color: #d0d3d6;
+    bottom:0;
+    width: 100%;
+    height: 25px;
+}
+
+/*-----Contact-----*/
+
+#contact{
+    flex-direction: column;
+}
+
+#formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #353535;
+    border: solid white;
+    border-radius: 1em;
+    padding: 5px;
+    line-height: 50px;
+    box-shadow: 5px 5px lightgray;
+    margin-bottom: 155px;
+}
+
+footer > #copyright {
+    color: black;
+    position: relative;
+    margin-left: 0;
+}
+
+#contactFooter{
+    position: relative;
+}
+
+
+/*______Acteurs__________*/
+
+.aligner{
+    display:flex;
+    flex-direction:row;
+}
+.consommateurs,.gouvernement,.drapeau_europe{
+    width: 35%;
+    height: 35%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius:2em;
+}
+
+.GAFAM,.RGPD,.planete{
+    width: 35%;
+    height: 35%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius:2em;
+}
+.drapeau_europe,.planete{
+    width: 25%;
+    height: 25%;
+}
