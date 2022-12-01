@@ -128,33 +128,38 @@ body { /* Toute la page sauf head et footer */
 }
 
 h1 {
+    background-size:cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 50px;
-    color: white;
-    padding: 40px 0;
-    margin: 5% auto auto auto;
+    margin-top:20px;
     width: 100%;
     text-align: center;
     line-height: 120%;
 }
 
 h2 { /* Sous Titre */
-    background: radial-gradient(#353535 400px, transparent 100%);
-    /*opacity: 0.9;*/
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
-    padding: 40px 0;
-    margin: auto auto 2% auto;
-    width: 100%;
+    margin: 10px auto auto auto;
+    width: 75%;
     text-align: center;
     line-height: 120%;
 }
 
 h3 { /* Titres de Paragraphes */
-    font-size: 25px;
+    font-size: 20px;
     color: black;
-    padding-left: 25px;
-    margin: 2% auto 1% auto;
+    margin:15px 0 15px 0;
+    width: 100%;
+}
+
+h4{
+    font-size: 17px;
+    color: black;
+    margin:15px 0 15px 0;
     width: 100%;
 }
 /*Paramètres de la page*/
@@ -239,4 +244,8 @@ main{
     padding-top:15px;
     justify-content:center;
     text-align:center;
+}
+
+.copyright{
+    background-color:gray;
 }
