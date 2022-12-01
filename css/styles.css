@@ -128,9 +128,12 @@ body { /* Toute la page sauf head et footer */
 }
 
 h1 {
+    background-size:cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 50px;
     margin-top:20px;
-    color: white;
     width: 100%;
     text-align: center;
     line-height: 120%;
@@ -241,4 +244,8 @@ main{
     padding-top:15px;
     justify-content:center;
     text-align:center;
+}
+
+.copyright{
+    background-color:gray;
 }
