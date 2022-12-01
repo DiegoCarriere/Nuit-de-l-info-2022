@@ -129,23 +129,19 @@ body { /* Toute la page sauf head et footer */
 
 h1 {
     font-size: 50px;
+    margin-top:20px;
     color: white;
-    padding: 40px 0;
-    margin: 5% auto auto auto;
     width: 100%;
     text-align: center;
     line-height: 120%;
 }
 
 h2 { /* Sous Titre */
-    background: radial-gradient(#353535 400px, transparent 100%);
-    /*opacity: 0.9;*/
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
-    padding: 40px 0;
-    margin: auto auto 2% auto;
-    width: 100%;
+    margin: 10px auto auto auto;
+    width: 75%;
     text-align: center;
     line-height: 120%;
 }
