@@ -61,6 +61,7 @@ li a {
   border-radius: 2px;
   overflow: hidden;
   max-height: 0;
+  z-index:5;
 }
 
 .sous-menu > li > a {
@@ -121,10 +122,8 @@ nav > ul > li:hover > a{
 
 body { /* Toute la page sauf head et footer */
     /*background-color: #d0d3d6;*/
-    //background-image: url("../images/backgroung.png");
-    background-position: top center;
-    background-repeat: repeat-x;
-    background-size: 100%;
+    background: rgb(198,21,158);
+    background: linear-gradient(90deg, rgba(198,21,158,1) 0%, rgba(195,32,84,0.9500175070028011) 27%, rgba(0,22,255,1) 100%);
     font-family: "Verdana", serif;
     margin: auto;
     height:100%;
