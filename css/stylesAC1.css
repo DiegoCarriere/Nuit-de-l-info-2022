@@ -56,19 +56,16 @@ h3{
 .plus{
     text-align: center;
     width: 100%;
-
-
 }
 
 .plus_2{
     background: linear-gradient(to bottom right, #513c1a, #60461d);
+    padding:3px;
     border-radius: 0.4em;
     font-weight: bold;
     font-size: 250%;
     text-decoration: none;
-    color: grey;
-
-
+    color: #262424;
 }
 
 /*====Photo====*/
