@@ -130,42 +130,42 @@ h3{
 #home{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/centre_ville.jpg);
+    background-image: url(.././images/centre_ville.jpg);
     background-size: cover;
 }
 
 #home2{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/justice.jpg);
+    background-image: url(.././images/justice.jpg);
     background-size: cover;
 }
 
 #home3{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/désyncro.jpg);
+    background-image: url(.././images/désyncro.jpg);
     background-size: cover;
 }
 
 #home4{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/PDG.jpg);
+    background-image: url(.././images/PDG.jpg);
     background-size: cover;
 }
 
 #home5{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/haut_pond.jpg);
+    background-image: url(.././images/haut_pond.jpg);
     background-size: cover;
 }
 
 #home6{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/chemin.jpg);
+    background-image: url(.././images/chemin.jpg);
     background-size: cover;
 
 
@@ -174,7 +174,7 @@ h3{
 #home7 {
     max-width: 100%;
     height: auto;
-    background-image: url(/images/TourMagne.jpg);
+    background-image: url(.././images/TourMagne.jpg);
     background-size: cover;
 }
 
