@@ -249,3 +249,19 @@ main{
 .copyright{
     background-color:gray;
 }
+
+#formulaire{
+    background-color:pink;
+    text-align:center;
+    width:350px;
+    border:solid 3px black;
+    border-radius: 2em;
+    margin:200px auto 0 auto;
+    padding:5px 0 5px 0;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#formulaire > div {
+    margin-bottom:15px;
+}
+
