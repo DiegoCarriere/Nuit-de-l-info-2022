@@ -277,3 +277,36 @@ footer:hover .copyright{
     background-color: #12e12e;
 
 }
+
+nav > ul > li:hover nav > ul >li {
+    background-color: #ffea00;
+    position:fixed;
+    height: 120%;
+    flex: 1;
+    transform: rotate(30deg);
+}
+
+
+.sous-menu:hover {
+    margin-top: var(--hauteur-menu);
+    width: 120%;
+    text-align: right;
+    background-color: #ffe900;
+    border-radius: 6px;
+    overflow: hidden;
+    transform: rotate(30deg);
+
+}
+
+.video:hover{
+    visibility: hidden;}
+
+#avis:hover nav{
+    width: 170%;
+    font-size: 5px;
+    position: static;
+    z-index:5;
+}
+#a:hover{
+    width: 10%;
+}
