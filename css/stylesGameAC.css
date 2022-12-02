@@ -119,8 +119,7 @@ h3{
 #home{
     max-width: 100%;
     height: auto;
-    background-image: url(/images/centre_ville.jpg);
-    background-size: cover;
+    background-image: url(./images/centre_ville.jpg);
 }
 
 #home2{
