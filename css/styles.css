@@ -170,7 +170,9 @@ main{
 }
 
 
-
+.titre_h1_escape{
+    color: #262424;
+}
 /* ACCUEIL */
 .logo_sida{
     margin-top:2px;
