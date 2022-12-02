@@ -166,8 +166,16 @@ h3{
     height: auto;
     background-image: url(/images/chemin.jpg);
     background-size: cover;
+
+
 }
 
+#home7 {
+    max-width: 100%;
+    height: auto;
+    background-image: url(/images/TourMagne.jpg);
+    background-size: cover;
+}
 
 /*Menu*/
 header{
