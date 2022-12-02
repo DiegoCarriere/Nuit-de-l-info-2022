@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
     <title>L'escape Game</title>
 </head>
 
@@ -14,7 +14,7 @@
     <nav>
         <ul>
             <a href="https://www.sida-info-service.org/">
-                <img src="images/images_index/Logo_Sidaction.png" alt="logo_sida" class="logo_sida"></a>
+                <img src="../images/images_index/Logo_Sidaction.png" alt="logo_sida" class="logo_sida"></a>
             <li><a href="index.html">Accueil</a></li>
             <li>
                 <a href="https://webinfo.iutmontp.univ-montp2.fr/~ALQUIERA/index.html">Jeu</a>
@@ -33,44 +33,17 @@
 
 <main>
    <h1>
+       Bienvenue dans l'escape game
    </h1>
+    <h2>
+        Cette partie du site ne peux etre entièrement réalisée si vous n'avez pas fait toutes les autres activitées
+    </h2>
+
+
 </main>
 
 <footer>
-    <div id="page_Wrapper">
-        <a href="./EscapeGame/Etape_1.html" target="_blank">
-            <img alt="escape" class="escape" src="./images/escape.png" id="escape"
-                 style="position: fixed;"/>
-        </a>
-    </div>
 
-    <!-- Include the script after all DOM elements have been created, to avoid any potential DOM-related errors -->
-    <script>
-        window.onLoad = Prep();
-
-        function Prep() {
-            window_Height = window.innerHeight;
-            window_Width = window.innerWidth;
-
-            image_Element = document.getElementById("escape");
-            image_Height = image_Element.clientHeight;
-            image_Width = image_Element.clientWidth;
-
-            availSpace_V = window_Height - image_Height;
-            availSpace_H = window_Width - image_Width;
-
-            var changeInterval = 3000; // Time has to be in miliseconds. So, 3000 is 3 seconds
-            setInterval(moveImage, changeInterval);
-        }
-
-        function moveImage() {
-            var randNum_V = Math.round(Math.random() * availSpace_V);
-            var randNum_H = Math.round(Math.random() * availSpace_H);
-
-            image_Element.style.top = randNum_V + "px";
-            image_Element.style.left = randNum_H + "px";
-        }
-    </script>
 </footer>
 </body>
 </html>
